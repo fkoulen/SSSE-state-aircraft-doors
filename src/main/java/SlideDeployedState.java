@@ -23,4 +23,9 @@ public class SlideDeployedState implements State {
     public String slideDeployed() {
         return State.super.slideDeployed();
     }
+
+    @Override
+    public String toString() {
+        return Messages.SLIDE_DEPLOYED;
+    }
 }

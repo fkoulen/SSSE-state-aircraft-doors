@@ -18,4 +18,9 @@ public class ClosedState implements State {
     public String armDoor() {
         return null;
     }
+
+    @Override
+    public String toString() {
+        return Messages.CLOSED_STATE_MESSAGE;
+    }
 }

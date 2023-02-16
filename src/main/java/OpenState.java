@@ -1,4 +1,5 @@
 public class OpenState implements State {
+
     @Override
     public String lockDoor() {
         return null;
@@ -17,5 +18,10 @@ public class OpenState implements State {
     @Override
     public String armDoor() {
         return null;
+    }
+
+    @Override
+    public String toString() {
+        return Messages.OPEN_STATE_MESSAGE;
     }
 }

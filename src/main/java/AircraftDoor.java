@@ -8,28 +8,28 @@ public class AircraftDoor {
     public AircraftDoor(String id) {
         this.id = id;
         //TODO initialise fields as necessary
-
+        setState(new OpenState());
     }
 
     public String openDoor() {
-        return null;
+        return state.openDoor();
     }
 
     public String closeDoor() {
-        return null;
+        return state.closeDoor();
     }
 
     public String armDoor() {
-        return null;
+        return state.armDoor();
     }
 
     public String lockDoor() {
-        return null;
+        return state.lockDoor();
     }
 
     //TODO implement methods correctly
     public State getState() {
-        return null;
+        return state;
     }
 
     void setState(State state) {
@@ -37,23 +37,23 @@ public class AircraftDoor {
     }
 
     public State getOpenState() {
-        return null;
+        return new OpenState();
     }
 
     public State getClosedState() {
-        return null;
+        return new ClosedState();
     }
 
     public State getLockedState() {
-        return null;
+        return new LockedState();
     }
 
     public State getArmedState() {
-        return null;
+        return new ArmedState();
     }
 
     public State getDeployedState() {
-        return null;
+        return new SlideDeployedState();
     }
 
     public String toString() {

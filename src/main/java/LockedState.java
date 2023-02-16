@@ -18,4 +18,9 @@ public class LockedState implements State {
     public String armDoor() {
         return null;
     }
+
+    @Override
+    public String toString() {
+        return Messages.LOCKED_STATE_MESSAGE;
+    }
 }

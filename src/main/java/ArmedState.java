@@ -18,4 +18,9 @@ public class ArmedState implements State {
     public String armDoor() {
         return null;
     }
+
+    @Override
+    public String toString() {
+        return Messages.ARMED_STATE_MESSAGE;
+    }
 }
