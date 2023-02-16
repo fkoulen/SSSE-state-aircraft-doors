@@ -1,10 +1,4 @@
 public class SlideDeployedState implements State {
-    private AircraftDoor aircraftDoor;
-
-    public SlideDeployedState(AircraftDoor aircraftDoor) {
-        this.aircraftDoor = aircraftDoor;
-    }
-
     @Override
     public String lockDoor() {
         return Messages.DOOR_NEEDS_RESETTING;

@@ -1,5 +1,5 @@
 public class ArmedState implements State {
-    private AircraftDoor aircraftDoor;
+    private final AircraftDoor aircraftDoor;
 
     public ArmedState(AircraftDoor aircraftDoor) {
         this.aircraftDoor = aircraftDoor;

@@ -1,5 +1,5 @@
 public class LockedState implements State {
-    private AircraftDoor aircraftDoor;
+    private final AircraftDoor aircraftDoor;
 
     public LockedState(AircraftDoor aircraftDoor) {
         this.aircraftDoor = aircraftDoor;

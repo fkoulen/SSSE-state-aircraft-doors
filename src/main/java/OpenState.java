@@ -1,12 +1,12 @@
 public class OpenState implements State {
-    private AircraftDoor aircraftDoor;
+    private final AircraftDoor aircraftDoor;
 
     public OpenState(AircraftDoor aircraftDoor) {
         this.aircraftDoor = aircraftDoor;
     }
 
     @Override
-    public String lockDoor()  {
+    public String lockDoor() {
         return Messages.DOOR_CANNOT_PERFORM_THIS_ACTION;
     }
 

@@ -1,20 +1,15 @@
-import java.util.concurrent.locks.Lock;
-
 public class AircraftDoor {
-
-    //TODO add fields as necessary
     private final State openState = new OpenState(this);
     private final State closedState = new ClosedState(this);
     private final State lockedState = new LockedState(this);
     private final State armedState = new ArmedState(this);
-    private final State deployedState = new SlideDeployedState(this);
+    private final State deployedState = new SlideDeployedState();
 
     String id;
     private State state;
 
     public AircraftDoor(String id) {
         this.id = id;
-        //TODO initialise fields as necessary
         setState(openState);
     }
 
@@ -34,7 +29,6 @@ public class AircraftDoor {
         return state.lockDoor();
     }
 
-    //TODO implement methods correctly
     public State getState() {
         return state;
     }
