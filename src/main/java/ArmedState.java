@@ -1,22 +1,31 @@
 public class ArmedState implements State {
+    private AircraftDoor aircraftDoor;
+
+    public ArmedState(AircraftDoor aircraftDoor) {
+        this.aircraftDoor = aircraftDoor;
+    }
+
     @Override
     public String lockDoor() {
-        return null;
+        aircraftDoor.setState(aircraftDoor.getLockedState());
+        return Messages.LOCKED_STATE_MESSAGE;
     }
 
     @Override
     public String closeDoor() {
-        return null;
+        aircraftDoor.setState(aircraftDoor.getClosedState());
+        return Messages.CLOSED_STATE_MESSAGE;
     }
 
     @Override
     public String openDoor() {
-        return null;
+        aircraftDoor.setState(aircraftDoor.getDeployedState());
+        return Messages.SLIDE_DEPLOYED;
     }
 
     @Override
     public String armDoor() {
-        return null;
+        return Messages.DOOR_CANNOT_PERFORM_THIS_ACTION;
     }
 
     @Override
