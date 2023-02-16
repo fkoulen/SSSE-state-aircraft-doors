@@ -1,7 +1,10 @@
 public interface State {
     String lockDoor();
+
     String closeDoor();
+
     String openDoor();
+
     String armDoor();
 
     default String slideDeployed() {

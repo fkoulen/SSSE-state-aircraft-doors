@@ -1,6 +1,6 @@
 public class Aircraft {
-    private AircraftDoor cabinDoor1;
-    private String type;
+    private final AircraftDoor cabinDoor1;
+    private final String type;
 
     public Aircraft(String type) {
         this.type = type;
@@ -13,7 +13,7 @@ public class Aircraft {
 
     @Override
     public String toString() {
-        return "Aircraft: " + type+ ": "+cabinDoor1;
+        return "Aircraft: " + type + ": " + cabinDoor1;
 
     }
 }

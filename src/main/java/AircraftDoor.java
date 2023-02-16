@@ -3,6 +3,7 @@ public class AircraftDoor {
     //TODO add fields as necessary
 
     String id;
+    private State state;
 
     public AircraftDoor(String id) {
         this.id = id;
@@ -10,38 +11,56 @@ public class AircraftDoor {
 
     }
 
-    public String openDoor(){
+    public String openDoor() {
         return null;
     }
+
     public String closeDoor() {
         return null;
     }
+
     public String armDoor() {
         return null;
     }
+
     public String lockDoor() {
+        return null;
+    }
+
+    //TODO implement methods correctly
+    public State getState() {
         return null;
     }
 
     void setState(State state) {
         this.state = state;
     }
-    //TODO implement methods correctly
-    public State getState() {
+
+    public State getOpenState() {
         return null;
     }
-    public State getOpenState(){return null;}
-    public State getClosedState(){ return null; }
-    public State getLockedState(){ return null; }
-    public State getArmedState() { return null; }
-    public State getDeployedState() { return null; }
+
+    public State getClosedState() {
+        return null;
+    }
+
+    public State getLockedState() {
+        return null;
+    }
+
+    public State getArmedState() {
+        return null;
+    }
+
+    public State getDeployedState() {
+        return null;
+    }
 
     public String toString() {
-        StringBuilder status = new StringBuilder();
-        status.append("\nAircraft Door: "+id);
-        status.append("\n");
-        status.append("State is " + state + "\n");
-        return status.toString();
+        String status = "\nAircraft Door: " + id +
+                "\n" +
+                "State is " + state + "\n";
+        return status;
     }
 
 

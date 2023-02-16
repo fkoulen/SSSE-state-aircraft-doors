@@ -1,6 +1,6 @@
 public class AircraftDoorDemo {
 
-    public static void main (String args[]){
+    public static void main(String[] args) {
         Aircraft aircraft = new Aircraft("VC10");
 
         //Normal flight
@@ -32,7 +32,8 @@ public class AircraftDoorDemo {
         printState(aircraft);
 
     }
-    public static void printState(Aircraft aircraft){
+
+    public static void printState(Aircraft aircraft) {
         System.out.println(aircraft.toString());
     }
 }
